@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All test Suite">
+    <test name="AirlineQA">
+        <classes>
+            <class name="Browserclass">
+                <parameter name="URL" value="https://rahulshettyacademy.com/seleniumPractise/#/"/>
+<methods>
+    <include name="setupbrowser"/>
+</methods>
+
+            </class>
+            <class name="AddAllProducts">
+                <parameter name="xpathButtons" value="//button[normalize-space()='ADD TO CART"/>
+                <parameter name="xpathButtons1" value="//div[@class='cart-info']"/>
+                <parameter name="xpathButtons2" value="//a[@class='cart-icon']"/>
+                <parameter name="xpathButtons3" value="//div[@class='cart-preview active']"/>
+                <methods>
+                    <include name=" adalprocducts"/>
+                    <include name="verifyingitemnos"/>
+                    <include name="clickcart"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

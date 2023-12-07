@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="QAFile">
+      <classes>
+          <class name="Browserclass">
+              <methods>
+                  <include name="setupbrowser">
+                  </include>
+              </methods>
+          </class>
+
+          <class name="AddAllProducts">
+              <methods>
+                  <include name="adalprocducts"/>
+                  <include name="verifyingitemnos"/>
+                  <exclude name=" clickcart"/>
+              </methods>
+          </class>
+      </classes>
+    </test>
+</suite>
